@@ -14,7 +14,7 @@
          2px  2px 2px #81253d;
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("Banner.jpg");
+    url("../img/Banner.jpg");
     background-size: cover;
 
 }
@@ -66,5 +66,4 @@ padding: 15px;
         width: 100%;
         margin: 0 auto;
     }
-}
 }
