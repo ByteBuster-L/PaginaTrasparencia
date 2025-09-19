@@ -1,0 +1,61 @@
+/*Colores*/
+:root {
+--vino: #5F1B2D;
+--dorado: #C19E74;
+--crema: #EBE7E0;
+}
+
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+
+/* Sección de información */
+.info-section {
+    padding: 50px 0;
+}
+
+.icon {
+
+    color: #007bff;
+}
+
+.info-section h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.info-section p {
+    margin: 10px 0;
+}
+
+
+
+
+/* Pie de página */
+.pie {
+    background-color: #5F1B2D;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+
+

@@ -1,0 +1,70 @@
+@import url(styles.css);
+
+.search-section {
+    min-height: 60vh;
+    background-color: #5F1B2D;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; 
+    color: #C19E74;
+    font-family: 'Verdana', sans-serif;
+
+    text-shadow:
+         2px  2px 2px #81253d;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("Banner.jpg");
+    background-size: cover;
+
+}
+
+
+
+.search-section h1 {
+    padding-top: 30PX;
+    margin-bottom: 2ch;
+    font-size: 2rem;
+}
+.search-section, .text-center {
+    text-align: center;
+    
+}
+.search-box {
+padding-top: 30px;
+
+}
+
+.form-control {
+border-radius: 10px;
+padding: 15px;
+
+}
+
+
+
+.form-select {
+   padding: 15px;
+   border-radius: 10px;
+   border: none;
+   margin-left: 20px;
+   
+}
+.search-box {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .search-section {
+        background-size: cover;
+        padding: 30px 10px;
+    }
+    .search-box {
+        margin-top: 10px;
+    }
+    .form-control, .form-select {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+}

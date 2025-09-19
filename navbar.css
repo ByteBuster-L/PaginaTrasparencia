@@ -1,0 +1,255 @@
+@import url(styles.css);
+
+.header {
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #C19E74 !important;
+    padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link:hover {
+    color: #C19E74 !important;
+    background-color: #81253d;
+    border-radius: 10px;
+}
+
+.auth-buttons .btn-outline-primary,
+.auth-buttons .btn-primary {
+    margin-left: 10px;
+    right: 0px;
+  
+
+}
+.auth-buttons .btn-outline-primary {
+   color: #C19E74;
+   border-color: #C19E74;
+   border: 1px solid #C19E74;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+   
+}
+
+.auth-buttons .btn-outline-primary:hover {
+ background-color: #C19E74;
+    color: white;
+}
+
+.auth-buttons .btn-primary {
+    color: #ffffff;
+    border-color: #C19E74;
+    border: 1px solid #C19E74;
+    background-color: #C19E74;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+   padding-bottom: 15px;
+   border-radius: 4px;
+
+}
+.auth-buttons .btn-primary:hover {
+    background-color: #967144;
+    color: white;
+}
+
+.logo {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.logo_mobile {
+    display: none;
+ 
+}
+header {
+    background-color: #5F1B2D;
+    color: white;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-btn {
+    display: none;
+    background-color: #EBE7E0;
+    border: none;
+    width: 50px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 895px) {
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        right: 0px;
+        background-color: #EBE7E0;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding: px 0;
+        }
+    .nav-mobile  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-link-mobile {
+        margin-left: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    }
+
+    .nav-link-mobile {
+        color: #C19E74 !important;
+        padding-left: 10px;
+       padding-right: 10px;
+       padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .nav-link-mobile:hover {
+        color: #C19E74 !important;
+        background-color: #f5f0e8;
+        border-radius: 5px;
+        filter: opacity(0.7);
+}
+
+.toggle-btn {
+    display: block;
+background-color: transparent;
+border: none;
+cursor: pointer;
+display: flex-end;
+flex-direction: column;
+margin-left: auto;
+margin-top: auto;
+position: absolute;
+top: 0px;
+right: 200px;
+}
+
+.toggle-btn img {
+    height: 30px;
+    width: 30px;
+    margin-top: -px;
+}
+
+.auth-buttons {
+    justify-content: center; 
+    width: 100%;  
+    margin-top: 20px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    position: absolute;
+   
+}
+}
+
+@media only screen and (max-width: 750px) {
+    .auth-buttons {
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+
+    .toggle-btn { top: 0px;
+        right: 110px;
+            
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .auth-buttons {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+
+    .toggle-btn { top: 0px;
+        right: 50px;     
+    }
+.logo {
+    display: none;
+
+}
+    .logo_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        height: 60px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .auth-buttons {
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+
+    .toggle-btn { top: 0px;
+        right: 20px;     
+    }
+.logo {
+    display: none;
+
+}
+    .logo_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        height: 60px;
+        width: auto;
+    }
+}

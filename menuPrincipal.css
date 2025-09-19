@@ -1,0 +1,85 @@
+/*MENÚ */
+
+.navs {
+    background-color: #5F1B2D;
+    color: white;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+    margin-bottom: 660px;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.linksheader {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.linksheader li {
+    margin: 0 15px;
+    padding: 7px 5px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    /* Efecto de transición suave */
+}
+
+.linksheader a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    /* Agregar un poco de espacio alrededor del texto */
+}
+
+.register,
+.login {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    /* Ocultar el icono por defecto */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Efecto hover */
+.linksheader li:hover {
+    background-color: orange;
+    border-radius: 4px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .linksheader {
+        display: none;
+        /* Ocultar el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 60px;
+        /* Ajustar según la altura del header */
+        left: 0;
+    }
+
+    .linksheader.active {
+        display: flex;
+        /* Mostrar el menú cuando está activo */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostrar el icono en móviles */
+    }
+}
+/*aquí termina el menú principal*/
