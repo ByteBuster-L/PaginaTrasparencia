@@ -7,6 +7,7 @@
     <title>informacion_publica</title>
     <link rel="stylesheet" href="css/informacion.css">
     <link rel="stylesheet" href="css/menuPrincipal.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=payments" />
@@ -19,23 +20,42 @@
 <body>
 
 
-    <header class="navs">
-        <div class="navegacion">
-            <div class="log">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbuVXD8LriJU7Dbpz37gBjz5SYnwvvEJaig&s" alt="" width="250" height="60">
+    <header class="header">
+        <section class="header_img">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo_cecyte.png" alt="Logo de la Plataforma" class="logo">
+            <img src="img/logo_cecyte_mobile.png" alt="Logo de la Plataforma en movil" class="logo_mobile">
+        </section>
+            <nav>
+                <ul class="nav" type="none">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="informacionP.html" class="nav-link">Información Pública</a></li>
+                    <!-- comento los sigueintes li debido a que no tenemos esas secciones hechas -->
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Solicitudes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Quejas</a></li> -->
+                    <li class="nav-item"><a href="DIF.html" class="nav-link">DIF</a></li>
+                    <li class="nav-item"><a href="https://bytebuster-l.github.io/Presentaci-n_Para_Primeros_Semestres/" class="nav-link">Quiz</a></li>
+                </ul>
+            </nav>
+        
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline-primary">Registrarse</a>
+                <a href="#" class="btn btn-primary">Iniciar sesión</a>
+                <button class="toggle-btn"><img src="img/justify.svg"> </button>
             </div>
-            <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Icono de menú -->
-            <ul class="linksheader" id="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="publicInformation">Información Publica</a></li>
-                <li><a href="Requests">Solicitudes</a></li>
-                <li><a href="Complaints">Quejas</a></li>
-                <li><a href="openData">Datos abiertos</a></li>
-                <li><a href="Statistical">Estadisticos</a></li>
-            </ul>
-            <a href="#" class="register">Registrarse</a>
-            <a href="#" class="login">Iniciar sesión</a>
+
+            <div class="mobile-nav">
+                <ul class="nav-mobile" type="none">
+                    <li class="nav-item"><a href="index.html" class="nav-link-mobile">Inicio</a></li>
+                    <li class="nav-item"><a href="informacionP.html" class="nav-link-mobile">Información Pública</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link-mobile">Solicitudes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-mobile">Quejas</a></li> -->
+                    <li class="nav-item"><a href="DIF.html" class="nav-link-mobile">DIF</a></li>
+                    <li class="nav-item"><a href="https://bytebuster-l.github.io/Presentaci-n_Para_Primeros_Semestres/" class="nav-link-mobile">Quiz</a></li>
+                </ul>
+            </div>
         </div>
+
     </header>
 
 
