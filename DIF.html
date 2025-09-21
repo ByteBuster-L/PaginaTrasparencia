@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema DIF</title>
     <link rel="stylesheet" href="css/stylesDIF.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
     <header class="header">
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbuVXD8LriJU7Dbpz37gBjz5SYnwvvEJaig&s" alt="Logo de la Plataforma" class="logo">
+        <section class="header_img">
+            <img src="img/logo_cecyte.png" alt="Logo de la Plataforma" class="logo">
+            <img src="img/logo_cecyte_mobile.png" alt="Logo de la Plataforma en movil" class="logo_mobile">
+        </section>
             <nav>
-                <ul class="nav">
+                <ul class="nav" id="menu" type="none">
                     <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="info_publica.html" class="nav-link">Información Pública</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Solicitudes</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Quejas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Datos Abiertos</a></li>
-                    <li class="nav-item"><a href="bottab.html" class="nav-link">Quiz</a></li>
-                    <li class="nav-item"><a href="dif.html" class="nav-link">DIF</a></li>
+                    <li class="nav-item"><a href="informacionP.html" class="nav-link">Información Pública</a></li>
+                    <!-- comento los sigueintes li debido a que no tenemos esas secciones hechas -->
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Solicitudes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Quejas</a></li> -->
+                    <li class="nav-item"><a href="DIF.html" class="nav-link">DIF</a></li>
+                    <li class="nav-item"><a href="quizInicio.html" class="nav-link">Quiz</a></li>
                 </ul>
             </nav>
+        
             <div class="auth-buttons">
                 <a href="#" class="btn btn-outline-primary">Registrarse</a>
                 <a href="#" class="btn btn-primary">Iniciar sesión</a>
+                <button class="toggle-btn" id="menu-icon"><img src="img/justify.svg"> </button>
+            </div>
+
+            <div class="mobile-nav">
+                <ul class="nav-mobile" type="none">
+                    <li class="nav-item"><a href="index.html" class="nav-link-mobile">Inicio</a></li>
+                    <li class="nav-item"><a href="informacionP.html" class="nav-link-mobile">Información Pública</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link-mobile">Solicitudes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link-mobile">Quejas</a></li> -->
+                    <li class="nav-item"><a href="DIF.html" class="nav-link-mobile">DIF</a></li>
+                    <li class="nav-item"><a href="quizInicio.html" class="nav-link-mobile">Quiz</a></li>
+                </ul>
             </div>
         </div>
+
     </header>
     <section class="info-section container">
         <div class="containerA">
@@ -49,8 +64,8 @@
             </div>
                 <div class="containerC-items">
                     <div class="conteiner-itemes-centros">
-                        <a class="link-CRII" href="">
-                            <div class="text-CRII" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
+                        <a class="text-link" href="">
+                            <div class="text-link" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
                                 CRII
                             </div>
                             <div class="conteiner-link">
@@ -58,7 +73,7 @@
                                     <div class="img-link">
                                         <div class="conteiner-logo-p">
                                             <img class="img-centros" src="img/logo-crii.png" alt="">
-                                            <p class="link-P" style="text-align: left;">
+                                            <p class="text-link" style="text-align: left;">
                                                 Impulsar e institucionalizar políticas de Inclusión Social, Rehabilitación Integral y Educación Especial para mejorar la calidad de vida de niñas, niños  y adolescentes con discapacidad del estado de Puebla, respetando los derechos de la niñez y del adolescente en situación de vulnerabilidad.
                                             </p>
                                         </div>
@@ -69,15 +84,15 @@
                     </div>  
                     <div class="conteiner-itemes-centros">
                         <a class="link-CREE" href="">
-                            <div class="text-CREE" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
+                            <div class="text-link" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
                                 CREE
                             </div>
                             <div class="container-link">
-                                <a class="text-link-CREE" style="text-decoration: none;" href="">
+                                <a class="text-link" style="text-decoration: none;" href="">
                                     <div class="img-link">
                                         <div>
                                             <img class="img-centros" src="img/CERR.png" alt="">
-                                            <p class="link-P" style="text-align: left;">
+                                            <p class="text-link" style="text-align: left;">
                                                 Impulsar e institucionalizar políticas de Inclusión Social, Rehabilitación Integral y Educación Especial para mejorar la calidad de vida de niñas, niños y adolescentes con discapacidad del estado de Puebla, respetando los derechos de la niñez y del adolescente en situación de vulnerabilidad.
                                             </p>
                                         </div>
@@ -88,15 +103,15 @@
                     </div>
                     <div class="conteiner-itemes-centros">
                         <a class="link-CCD" href="">
-                            <div class="text-CDD" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
+                            <div class="text-link style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
                                 CDD
                             </div>
                             <div class="container-link">
-                                <a class="text-link-CDD" style="text-decoration: none;" href="">
+                                <a class="text-link" style="text-decoration: none;" href="">
                                     <div class="img-link">
                                         <div>
                                             <img class="img-centros" src="img/CCD.png" alt="">
-                                            <p class="link-P" style="text-align: left;">
+                                            <p class="text-link" style="text-align: left;">
                                                 Impulsar e institucionalizar políticas de Inclusión Social, Rehabilitación Integral y Educación Especial para mejorar la calidad de vida de niñas, niños y adolescentes con discapacidad del estado de Puebla, respetando los derechos de la niñez y del adolescente en situación de vulnerabilidad.
                                             </p>
                                         </div>
@@ -107,15 +122,15 @@
                     </div>
                     <div class="conteiner-itemes-centros">
                         <a class="link-CAIC" href="">
-                            <div class="text-CAIC" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
+                            <div class="text-link" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
                                 CREE
                             </div>
                             <div class="container-link">
-                                <a class="text-link-CAIC" style="text-decoration: none;" href="">
+                                <a class="text-link" style="text-decoration: none;" href="">
                                     <div class="img-link">
                                         <div>
                                             <img class="img-centros" src="img/CAIC.png" alt="">
-                                            <p class="link-P" style="text-align: left;">
+                                            <p class="text-link" style="text-align: left;">
                                                 Impulsar e institucionalizar políticas de Inclusión Social, Rehabilitación Integral y Educación Especial para mejorar la calidad de vida de niñas, niños y adolescentes con discapacidad del estado de Puebla, respetando los derechos de la niñez y del adolescente en situación de vulnerabilidad.
                                             </p>
                                         </div>
@@ -125,12 +140,12 @@
                         </a>
                     </div>
                     <div class="conteiner-itemes-centros">
-                        <a class="link-CECADE" href="">
+                        <a class="text-link" href="">
                             <div class="text-CECADE" style="background: linear-gradient( 130deg, #5f1b2d 91%, transparent 91%, transparent 93%, #c19e74 93%, #c19e74 95%, transparent 95% ); padding: 5px;">
                                 CREE
                             </div>
                             <div class="container-link">
-                                <a class="text-link-CECADE" style="text-decoration: none;" href="">
+                                <a class="text-link" style="text-decoration: none;" href="">
                                     <div class="img-link">
                                         <div>
                                             <img class="img-centros" src="img/CRII.png" alt="">
@@ -169,5 +184,6 @@
         </div>
         <p>© 2024 Gobierno de la Nación | Todos los derechos reservados</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

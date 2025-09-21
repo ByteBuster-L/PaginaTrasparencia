@@ -13,16 +13,14 @@ body {
     color: #333;
 }
 
-a {
+a{
     text-decoration: none;
-    color: #007bff;
 }
 
-a:hover {
-    color: #0056b3;
+.text-link {
+    text-decoration: none;
+    color: #fff;
 }
-
-
 
 /* Sección de información */
 .info-section {

@@ -5,18 +5,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menuIcon.addEventListener("click", function() {
         menu.classList.toggle("active");
+        console.log("click");
+    });
+
+    document.addEventListener("click", function(event) {
+    // Si el menú está abierto y el clic NO es sobre el menú ni el icono
+      if (
+         menu.classList.contains("active") &&
+         !menu.contains(event.target) &&
+         event.target !== menuIcon
+      ) {
+        menu.classList.remove("active");
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function() {
+            menu.classList.remove("active");
+        });
     });
 
     window.addEventListener("scroll", function() {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-            // Scroll hacia abajo
-            document.querySelector('.navs').style.top = "-80px"; // Ajustar según la altura del header
+            document.querySelector('.header').style.top = "-170px";
         } else {
-            // Scroll hacia arriba
-            document.querySelector('.navs').style.top = "0";
+            document.querySelector('.header').style.top = "0";
         }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para Mobile or negative scrolling
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 });
