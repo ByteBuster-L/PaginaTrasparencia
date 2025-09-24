@@ -131,6 +131,32 @@ header {
         display: none;
     }
 
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+     .auth-buttons .btn-primary,
+    .auth-buttons .btn-outline-primary {
+        display: none;
+    }
+
+    /* 2. Anula los estilos del contenedor de los botones para que no ocupe espacio extra */
+    .auth-buttons {
+        position: static;
+        margin: 0;
+        width: auto;
+    }
+
+    /* 3. Posiciona el ícono de la hamburguesa a la derecha del header */
+    .toggle-btn {
+        position: absolute;
+        top: 20px; /* Ajusta este valor para centrarlo verticalmente */
+        right: 30px; /* Espacio desde el borde derecho */
+    }
+
     .mobile-nav{
         justify-content: center;
         display: flex;
