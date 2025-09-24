@@ -247,6 +247,11 @@ right: 200px;
         right: 110px;
             
     }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -270,8 +275,19 @@ right: 200px;
         height: 60px;
         width: auto;
     }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 @media screen and (max-width: 450px) {
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
     .auth-buttons {
         margin-left: 30px;
         margin-top: 10px;
